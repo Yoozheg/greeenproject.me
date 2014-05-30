@@ -1,0 +1,79 @@
+@charset "utf-8";
+*{padding:0;margin:0}
+body{color:#000;background:#fff url(img/background.png);font:16px "Segoe UI",Calibri,sans-serif;min-width:960px}
+section,nav,footer,header{min-width:960px}
+header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
+.clear{clear:both}
+.left{float:left}
+.right{float:right}
+.hide{display:none}
+.show{display:block}
+.fontSize24px{font-size:24px;}
+
+main{margin:0 auto;width:960px;position:relative;clear:both;}
+
+nav{position:fixed;top:0;text-align:center;z-index:999;background-color:white;width:100%; padding: 10px 0;}
+nav main{background:url('img/logo.png') 20px center no-repeat; height:82px;}
+nav ul{list-style:none; padding-top: 20px; margin-left:150px;}
+nav ul li{display:inline-block; padding-right:20px;}
+nav ul li a{font:30px "Segoe UI Light";text-decoration:none;color:#73b95b;}
+nav ul li a.active{font:bold 30px "Segoe UI";color:#5a9446;}
+nav ul li a:hover{background-color:#f9f9f9;}
+
+header{margin-bottom:50px; margin-top:100px;}
+header main{background:url('img/notebook.jpg') 50px 50px no-repeat; text-align:center;}
+header h2{color:#5a9446;font:bold 72px "Segoe UI"; text-transform:uppercase;padding-top:220px;}
+header h2:first-child{padding-top:40px;padding-left:300px;}
+header h2 span{font:72px "Segoe UI Light";color:#73b95b;}
+header h3{color:#73b95b;font:normal 36px "Segoe Script";padding-top:30px;padding-left:440px;}
+header h4{color:#73b95b;font:30px "Segoe UI Light";margin-top:70px;background:url('img/arrow.png') center bottom no-repeat; padding-bottom:20px;}
+
+#about{background:#73b95b;color:#fff;padding-bottom:15px;}
+#about h3{text-align:center; font:72px 'Segoe UI Light';}
+#about h3 span{font-weight:bold; font-family: "Segoe UI"}
+#about p.right{font:18px/22px 'Segoe UI Light'; text-align:right;float:none; padding-bottom:5px;}
+#about p.right span{font-weight:bold;}
+#about p{font:normal 30px 'Segoe UI';}
+#about table{border-spacing:48px;}
+#about td{width:180px;height:180px;background:#fff;color:#73b95b;border-radius:28px; font:30px "Segoe UI Light"; text-align:center;}
+#about td.left{text-align:left;float:none; padding-left:10px;}
+#about td span.number{font-size:72px;}
+#about td span.bold{font-weight:bold;font-family:"Segoe UI";text-transform:uppercase;}
+#about td span.bold{font-weight:bold;font-family:"Segoe UI";text-transform:uppercase;}
+#about td span.free{font-weight:bold;font-family:"Segoe UI";text-transform:uppercase;font-size:28px;}
+#about td.empty{width:48px;background:none;}
+
+#works{}
+#works main{padding: 40px 0;text-align:justify;}
+#works h3{color:#73b95b;font:110px/120px 'Segoe UI';display:inline-block;height:285px;vertical-align:bottom;margin-bottom:5px;}
+#works div{height:285px;display:inline-block;position:relative;vertical-align:bottom;margin-bottom:10px;}
+#works img{height:285px;display:inline-block;}
+#works p.caption{color:#fff;font:30px 'Segoe UI';height:46px;text-align:center;background-color: rgba( 115, 185, 91, 0.6);position:absolute;bottom:0;left:0;right:0;text-overflow:ellipsis;}
+#works p.hidden{display:none;color:#fff;font:30px 'Segoe UI';position:absolute;bottom:0;top:0;left:0;right:0;text-align:center;background-color:rgba(115,185,91,0.6);}
+#works div:hover p.caption{display:none}
+#works div:hover p.hidden{display:block}
+
+#team{background:#73b95b;color:white;}
+#team h3{font:72px 'Segoe UI Light';text-align:center;}
+#team p{font:24px 'Segoe UI Light';text-align:justify;}
+#team article{width:300px;display:inline-block;text-align:center;margin:20px 8px;}
+#team div.wrap{border-radius:140px;height:280px;width:280px;position:relative;}
+#team div.social{display:none;border-radius:140px;position:absolute;height:156px;top:0;left:0;right:0;background-color:rgba(171,191,58,0.72);padding-top:124px;}
+#team div.wrap:hover div.social{display:block;}
+#team p.name{text-align:center;color:#fff;font:30px 'Segoe UI';}
+#team p.skills{text-align:center;color:#000;font:18px 'Segoe UI Light';}
+
+hr{height:47px;color:white;}
+
+footer{background:#3f3f3f;}
+footer p.contacts{font:normal 18px/41px 'Trebuchet MS';color:white;display:inline-block;margin:5px 0;}
+footer p.contacts b{font-weight:bold;}
+footer p.contacts span{color:#73b95b;}
+footer form{float:right;}
+footer h5{color:#fff;font:30px 'Calibri';text-align:right;text-transform:uppercase;margin: 5px 0;}
+footer input, footer textarea{display:block;width:220px;height:30px;padding:5px;color:#73b95b;font:24px 'Segoe UI Light';margin-bottom:5px;outline:none;border:none;}
+footer textarea{width:450px;height:95px;}
+footer button{float:right;width:225px;height:85px;color:#fff;font:30px 'Segoe UI';text-transform:uppercase;background:#73b95b url('img/footer_form_arrow.png') 99% center no-repeat;border:none;outline:none;cursor:pointer;text-align:left;padding-left:15px;}
+/* Чтобы работало изменение цвета плейсхолдера следующие две строки не менять. Если их объеденить через запятую, то работать не будет*/
+:-moz-placeholder{color:#73b95b;}
+::-webkit-input-placeholder{color:#73b95b;}
