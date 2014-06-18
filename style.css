@@ -45,13 +45,18 @@ header h4{color:#73b95b;font:30px "Segoe UI Light";margin-top:70px;background:ur
 
 #works{}
 #works main{padding: 40px 0;text-align:justify;}
-#works h3{color:#73b95b;font:110px/120px 'Segoe UI';display:inline-block;height:285px;vertical-align:bottom;margin-bottom:5px;}
-#works div{height:285px;display:inline-block;position:relative;vertical-align:bottom;margin-bottom:10px;}
-#works img{height:285px;display:inline-block;}
-#works p.caption{color:#fff;font:30px 'Segoe UI';height:46px;text-align:center;background-color: rgba( 115, 185, 91, 0.6);position:absolute;bottom:0;left:0;right:0;text-overflow:ellipsis;}
+#works h3{color:#73b95b;font:110px/120px 'Segoe UI';display:inline-block;height:285px;vertical-align:bottom;margin-bottom:5px;width:372px;margin-right:15px;}
+#works div{height:285px;display:inline-block;position:relative;vertical-align:bottom;margin-bottom:10px;margin-right:15px;}
+#works img{height:285px;display:inline-block;width:inherit;}
+#works p.caption{color:#fff;font:30px 'Segoe UI';height:46px;text-align:center;background-color:rgba( 115, 185, 91, 0.6);position:absolute;bottom:0;left:0;right:0;text-overflow:ellipsis;}
 #works p.hidden{display:none;color:#fff;font:30px 'Segoe UI';position:absolute;bottom:0;top:0;left:0;right:0;text-align:center;background-color:rgba(115,185,91,0.6);}
 #works div:hover p.caption{display:none}
 #works div:hover p.hidden{display:block}
+.worksSmall{width:306px;}
+.worksMedium{width:631px;}
+.worksLarge{width:960px;margin-right:0 !important;}
+.worksFirst{margin-right:0 !important;width:569px;}
+.worksRight{margin-right:0 !important;}
 
 #team{background:#73b95b;color:white;}
 #team h3{font:72px 'Segoe UI Light';text-align:center;}
