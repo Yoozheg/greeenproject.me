@@ -16,8 +16,8 @@ nav main{background:url('img/logo.png') 20px center no-repeat; height:82px;}
 nav ul{list-style:none; padding-top: 20px; margin-left:150px;}
 nav ul li{display:inline-block; padding-right:20px;}
 nav ul li a{font:30px "Segoe UI Light";text-decoration:none;color:#73b95b;}
-nav ul li a.active{font:bold 30px "Segoe UI";color:#5a9446;}
-nav ul li a:hover{background-color:#f9f9f9;}
+nav ul li a.active{color:#5a9446;border-bottom:1px solid #5a9556}
+nav ul li a:hover{color:#5a9446;background-color:#f9f9f9;}
 
 header{margin-bottom:50px; margin-top:100px;}
 header main{background:url('img/notebook.jpg') 50px 50px no-repeat; text-align:center;}
@@ -73,7 +73,7 @@ hr{height:47px;color:white;}
 footer{background:#3f3f3f;}
 footer p.contacts{font:normal 18px/41px 'Trebuchet MS';color:white;display:inline-block;margin:5px 0;}
 footer p.contacts b{font-weight:bold;}
-footer p.contacts span{color:#73b95b;}
+footer p.contacts span, footer p.contacts a{color:#73b95b;text-decoration:none}
 footer form{float:right;}
 footer h5{color:#fff;font:30px 'Calibri';text-align:right;text-transform:uppercase;margin: 5px 0;}
 footer input, footer textarea{display:block;width:220px;height:30px;padding:5px;color:#73b95b;font:24px 'Segoe UI Light';margin-bottom:5px;outline:none;border:none;}
