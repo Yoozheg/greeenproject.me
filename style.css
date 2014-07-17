@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{padding:0;margin:0}
-body{color:#000;background:#fff url(img/background.png);font:16px "Segoe UI",Calibri,sans-serif;min-width:960px}
+body{color:#000;background:#fff;font:16px "Segoe UI",Calibri,sans-serif;min-width:960px}
 section,nav,footer,header{min-width:960px}
 header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 .clear{clear:both}
@@ -18,6 +18,9 @@ nav ul li{display:inline-block; padding-right:20px;}
 nav ul li a{font:30px "Segoe UI Light";text-decoration:none;color:#73b95b;}
 nav ul li a.active{color:#5a9446;border-bottom:1px solid #5a9556}
 nav ul li a:hover{color:#5a9446;background-color:#f9f9f9;}
+nav.scrolled {padding:0;}
+nav.scrolled main{background-image:none;height:50px;}
+nav.scrolled ul{padding-top:0;}
 
 header{margin-bottom:50px; margin-top:100px;}
 header main{background:url('img/notebook.jpg') 50px 50px no-repeat; text-align:center;}
