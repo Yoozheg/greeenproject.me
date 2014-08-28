@@ -24,13 +24,15 @@ nav.scrolled ul{padding-top:0;}
 
 header{margin-bottom:50px; margin-top:100px;}
 header main{background:url('img/notebook.jpg') 50px 50px no-repeat; text-align:center;}
-header h2{color:#5a9446;font:bold 72px "Segoe UI"; text-transform:uppercase;padding-top:220px;}
-header h2:first-child{padding-top:40px;padding-left:300px;}
+header h2{color:#5a9446;font:bold 72px "Segoe UI"; text-transform:uppercase;padding-top:50px;padding-left:0;}
 header h2 span{font:72px "Segoe UI Light";color:#73b95b;}
-header h3{color:#73b95b;font:normal 36px "Segoe Script";padding-top:30px;padding-left:440px;}
-header h4{color:#73b95b;font:30px "Segoe UI Light";margin-top:70px;background:url('img/arrow.png') center bottom no-repeat; padding-bottom:20px;}
+header p{color:#73b95b;font:normal 36px "Segoe Script";padding-top:100px;padding-left:440px;}
+header h3{color:#73b95b;font:normal 30px "Segoe Script";padding-top:0;padding-left:0;}
+header div{margin-left:400px;text-align:center;}
+header button{margin-top:100px;padding:10px 15px;color:#73b95b;font:bold 36px "Segoe UI";text-transform:uppercase;background:none;border:3px solid #73b95b;cursor:pointer;border-radius:2px;}
+header button:hover{background:#73b95b;color:white;}
 
-#about{background:#73b95b;color:#fff;padding-bottom:15px;}
+#about{background:#73b95b;color:#fff;padding:50px 0;}
 #about h3{text-align:center; font:72px 'Segoe UI Light';}
 #about h3 span{font-weight:bold; font-family: "Segoe UI"}
 #about p.right{font:18px/22px 'Segoe UI Light'; text-align:right;float:none; padding-bottom:5px;}
@@ -60,7 +62,14 @@ header h4{color:#73b95b;font:30px "Segoe UI Light";margin-top:70px;background:ur
 .worksFirst{margin-right:0 !important;width:569px;}
 .worksRight{margin-right:0 !important;}
 
-#team{background:#73b95b;color:white;}
+#price{}
+#price article{display:block;float:left;width:200px;}
+#price div{display:none;width:560px;}
+#price article:hover{width:560px;}
+#price article:hover div{display:block;}
+#price article:nth-child(even){background:#ddd;}
+
+#team{background:#73b95b;color:white;clear:both;}
 #team h3{font:72px 'Segoe UI Light';text-align:center;}
 #team p{font:24px 'Segoe UI Light';text-align:justify;}
 #team article{width:300px;display:inline-block;text-align:center;margin:20px 8px;}
