@@ -10,8 +10,9 @@ header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 .show{display:block}
 
 main{margin:0 auto;width:960px;position:relative;clear:both;}
+section, footer{padding:40px 0}
 
-nav{position:fixed;top:0;text-align:center;z-index:999;background-color:white;width:100%; padding: 10px 0;}
+nav{position:fixed;top:0;text-align:center;z-index:999;background-color:white;width:100%; padding: 10px 0;transition:0.9s all}
 nav main{background:url('img/logo.png') 20px center no-repeat; height:82px;}
 nav ul{list-style:none; padding-top: 20px; margin-left:150px;}
 nav ul li{display:inline-block; padding-right:20px;}
@@ -19,7 +20,7 @@ nav ul li a{font:30px "Segoe UI Light";text-decoration:none;color:#73b95b;}
 nav ul li a.active{color:#5a9446;border-bottom:1px solid #5a9556}
 nav ul li a:hover{color:#5a9446;background-color:#f9f9f9;}
 nav.scrolled {padding:0;}
-nav.scrolled main{background-image:none;height:50px;}
+nav.scrolled main{background-size:50px 50px;background-position:32px top;height:50px;}
 nav.scrolled ul{padding-top:0;}
 
 header{margin-bottom:50px; margin-top:100px;}
@@ -48,12 +49,12 @@ header h4{color:#73b95b;font:30px "Segoe UI Light";margin-top:70px;background:ur
 #works{}
 #works main{padding: 40px 0;text-align:justify;}
 #works h3{color:#73b95b;font:110px/120px 'Segoe UI';display:inline-block;height:285px;vertical-align:bottom;margin-bottom:5px;width:372px;margin-right:15px;}
-#works div{height:285px;display:inline-block;position:relative;vertical-align:bottom;margin-bottom:10px;margin-right:15px;}
+#works figure{height:285px;display:inline-block;position:relative;vertical-align:bottom;margin-bottom:10px;margin-right:15px;transition:0.6s all}
+#works figure:hover{box-shadow:4px 4px 6px rgba(0,80,0,.5)}
 #works img{height:285px;display:inline-block;width:inherit;}
-#works p.caption{color:#fff;font:30px 'Segoe UI';height:46px;text-align:center;background-color:rgba( 115, 185, 91, 0.6);position:absolute;bottom:0;left:0;right:0;text-overflow:ellipsis;}
-#works p.hidden{display:none;color:#fff;font:30px 'Segoe UI';position:absolute;bottom:0;top:0;left:0;right:0;text-align:center;background-color:rgba(115,185,91,0.6);}
-#works div:hover p.caption{display:none}
-#works div:hover p.hidden{display:block}
+#works figcaption{color:white;box-shadow:0 -5px 10px rgba(0,0,0,.6);text-shadow:0 0 2px black;font:30px 'Segoe UI';text-align:center;background-color:rgba(5, 85, 0, 0.9);position:absolute;bottom:0;left:0;right:0}
+#works figure figcaption div{transition:0.6s all;height:0;overflow:hidden;font-size:20px}
+#works figure:hover figcaption div{height:60px;overflow:none}
 .worksSmall{width:306px;}
 .worksMedium{width:631px;}
 .worksLarge{width:960px;margin-right:0 !important;}

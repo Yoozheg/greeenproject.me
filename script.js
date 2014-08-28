@@ -1,21 +1,7 @@
 (function(window, document, undefined){
  "use strict";
  
- //ОТСЮДА НАЧИНАЕТСЯ ИНДУСЯТСКАЯ ХЕРНЯ В ИСПОЛНЕНИИ ДАМИРА, НО ОНА РАБОТАЕТ
-   var nav = document.getElementsByTagName('nav');
-   
-	window.onscroll = function() {
-    var pageY = window.pageYOffset || document.documentElement.scrollTop;
-	if (pageY > 0) {
-      nav[0].className = "scrolled";
-    } else {
-      nav[0].className = "";
-    }
-		
-  };	
- //КОНЕЦ ИНДУСЯТИНЫ
- 
- function $(e){return typeof e == 'string' ? document.querySelector(e) : e}
+ function $(e){return typeof e == 'string' ? document.querySelector(e) : (e instanceof Array ? document.querySelectorAll(e[0]) : e)}
  
  function ajax(text, addr, callback, params){
   var req = (parseURL(addr).host === window.location.hostname) ? new XMLHttpRequest() : (function(XHR){return new XHR()})(window.XDomainRequest || window.XMLHttpRequest);
@@ -112,6 +98,9 @@
    segments: a.pathname.replace(/^\//,'').split('/')
   };
  }
+ function scroll(){
+  $('nav').className = (window.pageYOffset || document.documentElement.scrollTop) > 100 ? "scrolled" : "";
+ }
  
  window.onload = function(e){
   var forms = document.querySelectorAll('form button,form img');
@@ -132,14 +121,17 @@
    return false;
   }
   
-  $('#splash').onclick = function(){
-   $('#splash').style.display = 'none';
-  }
-  $('#splash form').onclick = function(e){
-   e.preventDefault();
-   e.stopPropagation();
-   e.cancelBubble = true;
-   return false;
+  var splash = $('#splash');
+  if(splash){
+   splash.onclick = function(){
+    splash.style.display = 'none';
+   }
+   $('#splash form').onclick = function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    e.cancelBubble = true;
+    return false;
+   }
   }
   
   var buttons = document.querySelectorAll('.button');
@@ -163,6 +155,16 @@
   //$('#close').onclick = function(){
   // $('#bigIMG').style.display = 'none';
   //}
+  
+  scroll();
+  window.onscroll = scroll;
+ 
+  var links = $(['nav a']);
+  for(var i=0; i < links.length; ++i){
+   links[i].onclick = function(e){
+    
+   }
+  }
  }
 })(window, document);
 

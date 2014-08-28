@@ -10,12 +10,9 @@
 
  $name  = getStr('name');
  $phone = getStr('phone');
- $email = getStr('email');
  $comment = getStr('comment');
- $present = getStr('present');
- $color = getStr('color');
 
- $site = "GreenProject.me";
+ $site = "greenproject.me";
  $subject = "Заявка с сайта " . $site;
  
  $mes = "Имя: ".$name." \nТелефон: ". $phone." \nКомментарий: ".$comment;
