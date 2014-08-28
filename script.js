@@ -114,10 +114,11 @@
    for(var i = 0; i < inputs.length; ++i){
     if(inputs[i].value.length > 0 && inputs[i].checkValidity()) data[inputs[i].name] = inputs[i].value; else return alert("Как минимум одно из полей не заполнено!")
    }
+   var comment = form.querySelector('textarea');
+   data['comment'] = comment.value;
    ajax(data, 'server.php', function(r){
     alert(r);
    });
-   $('#splash').style.display = 'none';
    return false;
   }
   

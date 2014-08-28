@@ -1,5 +1,5 @@
 <?php
- $address = "paveltrofimov@outlook.com"; // АДРЕС ПОЧТЫ МЕНЯТЬ ТУТ
+ $address = "xaozlo@gmail.com"; // АДРЕС ПОЧТЫ МЕНЯТЬ ТУТ
  
  function getStr($data, $default = ""){
   if(!isset($_POST[$data])) return $default;

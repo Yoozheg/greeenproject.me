@@ -54,7 +54,7 @@ header h4{color:#73b95b;font:30px "Segoe UI Light";margin-top:70px;background:ur
 #works img{height:285px;display:inline-block;width:inherit;}
 #works figcaption{color:white;box-shadow:0 -5px 10px rgba(0,0,0,.6);text-shadow:0 0 2px black;font:30px 'Segoe UI';text-align:center;background-color:rgba(5, 85, 0, 0.9);position:absolute;bottom:0;left:0;right:0}
 #works figure figcaption div{transition:0.6s all;height:0;overflow:hidden;font-size:20px}
-#works figure:hover figcaption div{height:60px;overflow:none}
+#works figure:hover figcaption div{height:60px}
 .worksSmall{width:306px;}
 .worksMedium{width:631px;}
 .worksLarge{width:960px;margin-right:0 !important;}
